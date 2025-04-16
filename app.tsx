@@ -1,16 +1,21 @@
 import React from "react";
 import { Text, View } from "react-native";
-import List from "./components/basic/list";
-import Buttons from "./components/basic/buttons";
-import Forms from "./components/basic/form";
+import TodoLists from "./components/todoList/todo-lists";
 
 const App = () => {
   return (
-    <View>
+    <View
+      style={{
+        width: "100%",
+        flex: 1,
+        flexDirection: "column",
+        display: "flex",
+        padding: 10,
+        marginHorizontal: "auto",
+      }}
+    >
       <Text>Hi there! well here i am!</Text>
-      {/* <List /> */}
-      {/* <Buttons /> */}
-      <Forms />
+      <TodoLists />
     </View>
   );
 };
