@@ -1,15 +1,7 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import TodoLists from "@/components/todoList/todo-lists";
 
 function App() {
-  return (
-    <View>
-      <Text>Hi</Text>
-      <Link href="/profile">
-        <Text>Go to Profile</Text>
-      </Link>
-    </View>
-  );
+  return <TodoLists />;
 }
 
 export default App;
