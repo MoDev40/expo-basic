@@ -4,7 +4,8 @@ import React from "react";
 const RootLayout = () => {
   return (
     <Stack>
-      <Stack.Screen
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      {/* <Stack.Screen
         name="index"
         options={{ title: "Home", headerTintColor: "skyblue" }}
       />
@@ -31,7 +32,7 @@ const RootLayout = () => {
         options={{
           title: "Blogs",
         }}
-      />
+      /> */}
     </Stack>
   );
 };
